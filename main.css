@@ -1,0 +1,26 @@
+
+body {
+  font-family: "Times New Roman", serif;
+  font-weight: 300;
+  background: radial-gradient(circle, black, lightgrey);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div {
+  font-size: 20px;
+}
+
+.picture {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: thick;
+  box-shadow:0 0 15px white;
+}
