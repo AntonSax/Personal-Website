@@ -6,7 +6,7 @@
   border-width: thin;
   */
   /*
-  margin: .25em;
+  padding: .25em;
   */
 }
 
@@ -122,4 +122,50 @@ ul.action_bar {
 
 .action_bar a:hover {
   background-color: #660000; /* dark maroon */
+}
+
+.paper {
+  color: black;
+  background-color: burlywood;  /* a tan color */
+
+  max-height: auto;               /* needs to be max-height so that it can be smaller than 100% */
+  width: 50%;                     /* make the page half the width of the screen */
+  top: 8.8em;                    /* kind janky i know */
+  bottom: -1em;                   /* need this to offset the "translateY(-1em)" */
+
+  position: fixed;                /* make it so that the page can't be moved by scrolling, cannot be relative or static */
+  display: block;
+  left: 25%;
+  transform: translateY(-1em);    /* push the paper up into the nav bar */
+  box-sizing: border-box;         /* prevents the padding from affecting the dimensions. does not work below ie 8 */
+
+  z-index: -1;                    /* make it appear behind profilepic and header (with index 0?) */
+
+  margin: 0 0 0 0;
+  padding: .75em 0em 0em 0em;                   /* making this 0 puts the scrollbar in .scrolling_page against the edge */
+
+  box-shadow: inset 0em 0em 2em 0em black;      /* makes it appear inside the page */
+
+  border-color: slategrey;
+  border-width: thin;
+  border-style: solid;
+}
+
+.scrolling_page {
+  position: relative;           /* idk how this affects stuff */
+
+  max-height: 100%;             /* need to have this for scrolling to work */
+                                /* currently bottom of scroll hidden */
+  overflow: auto;               /* allows scroll bar to be shown */
+
+  padding: 0em 1em 1em 1em;
+  margin: 0em;                  /* making this more than 0 moves the scroll bar */
+}
+
+#biographytitle {
+}
+
+#biography {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
 }
