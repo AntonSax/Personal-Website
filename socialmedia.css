@@ -123,3 +123,51 @@ ul.action_bar {
 .action_bar a:hover {
   background-color: #660000; /* dark maroon */
 }
+
+.icon_table {
+  background-color: #3366cc;
+
+  /* Make the table look like its glass */
+  background: linear-gradient(#2e5cb8 40%, rgb(94, 132, 204) 150%);
+
+  /* Center the box holding the icons */
+  position: absolute;               /* The element is positioned relative to its first positioned (not static) ancestor element */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Make the table fit our theme with curved corners. */
+  border-radius: 1em;
+
+  box-shadow: .25em .5em 1em 0em #0a1429;
+}
+
+tr {
+}
+
+td {
+  /* Shows how the table cells are arranged */
+  /*
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  */
+
+  /* Make some aesthetic space in the table by pushing out edges of box. */
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.social_media {
+  /*
+  border-style: solid;
+  border-color: black;
+  */
+
+  /* Make the box shadow circular around each icon */
+  border-radius: 100%;
+
+  box-shadow: .15em .3em .5em 0em black;
+}

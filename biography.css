@@ -130,7 +130,7 @@ ul.action_bar {
 
   max-height: auto;               /* needs to be max-height so that it can be smaller than 100% */
   width: 50%;                     /* make the page half the width of the screen */
-  top: 8.8em;                    /* kind janky i know */
+  top: 8.8em;                     /* kinda janky i know */
   bottom: -1em;                   /* need this to offset the "translateY(-1em)" */
 
   position: fixed;                /* make it so that the page can't be moved by scrolling, cannot be relative or static */
@@ -146,7 +146,7 @@ ul.action_bar {
 
   box-shadow: inset 0em 0em 2em 0em black;      /* makes it appear inside the page */
 
-  border-color: slategrey;
+  border-color: slategray;
   border-width: thin;
   border-style: solid;
 }

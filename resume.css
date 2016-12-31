@@ -12,6 +12,10 @@
 
 body {
   background-color: #142952;  /* dark blue */
+
+  /* Centers the children aka... */
+  /* Centers everything in the pdf_panel blocks */
+  text-align: center;
 }
 
 header {
@@ -122,4 +126,30 @@ ul.action_bar {
 
 .action_bar a:hover {
   background-color: #660000; /* dark maroon */
+}
+
+#pdf_panel {
+  display: inline-block;
+
+  margin-top: 1em;
+}
+
+#pdf {
+  border: none;
+
+  height: 42em;
+  width: 33em;
+}
+
+#panel {
+  display: inline-block;
+
+  height: 42em;
+
+  /* Makes the panel box not be weirdly dangling below the pdf */
+  vertical-align: top;
+
+  color: white;
+
+  box-sizing: border-box;
 }
